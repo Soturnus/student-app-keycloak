@@ -28,10 +28,6 @@ public class KeycloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter
 		super.configure(http);
 		http.authorizeRequests().antMatchers("/contact-us").permitAll() //antMatchers são paginas publicas acessiveis por todos
 		.anyRequest().authenticated()
-<<<<<<< HEAD
-=======
-		.and().logout().logoutUrl("").logoutSuccessUrl("/login")
->>>>>>> efe755eee2ea33942c69f035ad09beb26a8e32a7
 		.and().exceptionHandling().accessDeniedPage("/access-denied");
 	}
 

@@ -10,11 +10,7 @@ public class ProfessorController {
 
 	@GetMapping("/contact-us")
 	public ModelAndView login() {
-<<<<<<< HEAD:src/main/java/com/soturno/controller/StudentController.java
 		ModelAndView modelAndView = new ModelAndView("contact-us");
-=======
-		ModelAndView modelAndView = new ModelAndView("/contact-us");
->>>>>>> efe755eee2ea33942c69f035ad09beb26a8e32a7:src/main/java/com/soturno/controller/ProfessorController.java
 		return modelAndView;
 	}
 	
